@@ -1,0 +1,219 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="obj\**" />
+    <Compile Remove="wwwroot\images\8q-gsMJg.png\**" />
+    <Content Remove="obj\**" />
+    <Content Remove="wwwroot\images\8q-gsMJg.png\**" />
+    <EmbeddedResource Remove="obj\**" />
+    <EmbeddedResource Remove="wwwroot\images\8q-gsMJg.png\**" />
+    <None Remove="obj\**" />
+    <None Remove="wwwroot\images\8q-gsMJg.png\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net5.0\appsettings.Development.json" />
+    <Content Include="bin\Debug\net5.0\appsettings.json" />
+    <Content Include="bin\Debug\net5.0\RecipeFoodApiProject.deps.json" />
+    <Content Include="bin\Debug\net5.0\RecipeFoodApiProject.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\net5.0\RecipeFoodApiProject.runtimeconfig.json" />
+    <Content Include="bin\Release\net5.0\appsettings.Development.json" />
+    <Content Include="bin\Release\net5.0\appsettings.json" />
+    <Content Include="bin\Release\net5.0\RecipeFoodApiProject.deps.json" />
+    <Content Include="bin\Release\net5.0\RecipeFoodApiProject.runtimeconfig.dev.json" />
+    <Content Include="bin\Release\net5.0\RecipeFoodApiProject.runtimeconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net5.0\Application.dll" />
+    <None Include="bin\Debug\net5.0\Application.pdb" />
+    <None Include="bin\Debug\net5.0\AutoMapper.dll" />
+    <None Include="bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll" />
+    <None Include="bin\Debug\net5.0\cs\System.Private.ServiceModel.resources.dll" />
+    <None Include="bin\Debug\net5.0\Dapper.dll" />
+    <None Include="bin\Debug\net5.0\de\System.Private.ServiceModel.resources.dll" />
+    <None Include="bin\Debug\net5.0\Domain.dll" />
+    <None Include="bin\Debug\net5.0\Domain.pdb" />
+    <None Include="bin\Debug\net5.0\es\System.Private.ServiceModel.resources.dll" />
+    <None Include="bin\Debug\net5.0\fr\System.Private.ServiceModel.resources.dll" />
+    <None Include="bin\Debug\net5.0\Google.Apis.Auth.AspNetCore3.dll" />
+    <None Include="bin\Debug\net5.0\Google.Apis.Auth.dll" />
+    <None Include="bin\Debug\net5.0\Google.Apis.Auth.PlatformServices.dll" />
+    <None Include="bin\Debug\net5.0\Google.Apis.Core.dll" />
+    <None Include="bin\Debug\net5.0\Google.Apis.dll" />
+    <None Include="bin\Debug\net5.0\it\System.Private.ServiceModel.resources.dll" />
+    <None Include="bin\Debug\net5.0\ja\System.Private.ServiceModel.resources.dll" />
+    <None Include="bin\Debug\net5.0\ko\System.Private.ServiceModel.resources.dll" />
+    <None Include="bin\Debug\net5.0\MediatR.Contracts.dll" />
+    <None Include="bin\Debug\net5.0\MediatR.dll" />
+    <None Include="bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.ObjectPool.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.Options.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.OpenApi.dll" />
+    <None Include="bin\Debug\net5.0\Newtonsoft.Json.dll" />
+    <None Include="bin\Debug\net5.0\pl\System.Private.ServiceModel.resources.dll" />
+    <None Include="bin\Debug\net5.0\pt-BR\System.Private.ServiceModel.resources.dll" />
+    <None Include="bin\Debug\net5.0\RecipeFoodApiProject.dll" />
+    <None Include="bin\Debug\net5.0\RecipeFoodApiProject.exe" />
+    <None Include="bin\Debug\net5.0\RecipeFoodApiProject.pdb" />
+    <None Include="bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win-x64\native\sni.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win-x86\native\sni.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll" />
+    <None Include="bin\Debug\net5.0\ru\System.Private.ServiceModel.resources.dll" />
+    <None Include="bin\Debug\net5.0\Serilog.dll" />
+    <None Include="bin\Debug\net5.0\Serilog.Extensions.Logging.dll" />
+    <None Include="bin\Debug\net5.0\Serilog.Extensions.Logging.File.dll" />
+    <None Include="bin\Debug\net5.0\Serilog.Formatting.Compact.dll" />
+    <None Include="bin\Debug\net5.0\Serilog.Sinks.Async.dll" />
+    <None Include="bin\Debug\net5.0\Serilog.Sinks.File.dll" />
+    <None Include="bin\Debug\net5.0\Serilog.Sinks.RollingFile.dll" />
+    <None Include="bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll" />
+    <None Include="bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll" />
+    <None Include="bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll" />
+    <None Include="bin\Debug\net5.0\System.Data.SqlClient.dll" />
+    <None Include="bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll" />
+    <None Include="bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll" />
+    <None Include="bin\Debug\net5.0\System.Net.WebSockets.WebSocketProtocol.dll" />
+    <None Include="bin\Debug\net5.0\System.Private.ServiceModel.dll" />
+    <None Include="bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <None Include="bin\Debug\net5.0\System.ServiceModel.dll" />
+    <None Include="bin\Debug\net5.0\System.ServiceModel.Http.dll" />
+    <None Include="bin\Debug\net5.0\System.ServiceModel.Primitives.dll" />
+    <None Include="bin\Debug\net5.0\System.ServiceModel.Security.dll" />
+    <None Include="bin\Debug\net5.0\tr\System.Private.ServiceModel.resources.dll" />
+    <None Include="bin\Debug\net5.0\zh-Hans\System.Private.ServiceModel.resources.dll" />
+    <None Include="bin\Debug\net5.0\zh-Hant\System.Private.ServiceModel.resources.dll" />
+    <None Include="bin\Release\net5.0\Application.dll" />
+    <None Include="bin\Release\net5.0\Application.pdb" />
+    <None Include="bin\Release\net5.0\AutoMapper.dll" />
+    <None Include="bin\Release\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll" />
+    <None Include="bin\Release\net5.0\cs\System.Private.ServiceModel.resources.dll" />
+    <None Include="bin\Release\net5.0\Dapper.dll" />
+    <None Include="bin\Release\net5.0\de\System.Private.ServiceModel.resources.dll" />
+    <None Include="bin\Release\net5.0\Domain.dll" />
+    <None Include="bin\Release\net5.0\Domain.pdb" />
+    <None Include="bin\Release\net5.0\es\System.Private.ServiceModel.resources.dll" />
+    <None Include="bin\Release\net5.0\fr\System.Private.ServiceModel.resources.dll" />
+    <None Include="bin\Release\net5.0\Google.Apis.Auth.AspNetCore3.dll" />
+    <None Include="bin\Release\net5.0\Google.Apis.Auth.dll" />
+    <None Include="bin\Release\net5.0\Google.Apis.Auth.PlatformServices.dll" />
+    <None Include="bin\Release\net5.0\Google.Apis.Core.dll" />
+    <None Include="bin\Release\net5.0\Google.Apis.dll" />
+    <None Include="bin\Release\net5.0\it\System.Private.ServiceModel.resources.dll" />
+    <None Include="bin\Release\net5.0\ja\System.Private.ServiceModel.resources.dll" />
+    <None Include="bin\Release\net5.0\ko\System.Private.ServiceModel.resources.dll" />
+    <None Include="bin\Release\net5.0\MediatR.Contracts.dll" />
+    <None Include="bin\Release\net5.0\MediatR.dll" />
+    <None Include="bin\Release\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll" />
+    <None Include="bin\Release\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll" />
+    <None Include="bin\Release\net5.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll" />
+    <None Include="bin\Release\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll" />
+    <None Include="bin\Release\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll" />
+    <None Include="bin\Release\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll" />
+    <None Include="bin\Release\net5.0\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <None Include="bin\Release\net5.0\Microsoft.DotNet.PlatformAbstractions.dll" />
+    <None Include="bin\Release\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll" />
+    <None Include="bin\Release\net5.0\Microsoft.EntityFrameworkCore.dll" />
+    <None Include="bin\Release\net5.0\Microsoft.EntityFrameworkCore.Relational.dll" />
+    <None Include="bin\Release\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll" />
+    <None Include="bin\Release\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <None Include="bin\Release\net5.0\Microsoft.Extensions.DependencyInjection.dll" />
+    <None Include="bin\Release\net5.0\Microsoft.Extensions.DependencyModel.dll" />
+    <None Include="bin\Release\net5.0\Microsoft.Extensions.Identity.Core.dll" />
+    <None Include="bin\Release\net5.0\Microsoft.Extensions.Identity.Stores.dll" />
+    <None Include="bin\Release\net5.0\Microsoft.Extensions.ObjectPool.dll" />
+    <None Include="bin\Release\net5.0\Microsoft.Extensions.Options.dll" />
+    <None Include="bin\Release\net5.0\Microsoft.Extensions.Primitives.dll" />
+    <None Include="bin\Release\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <None Include="bin\Release\net5.0\Microsoft.IdentityModel.Logging.dll" />
+    <None Include="bin\Release\net5.0\Microsoft.IdentityModel.Protocols.dll" />
+    <None Include="bin\Release\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <None Include="bin\Release\net5.0\Microsoft.IdentityModel.Tokens.dll" />
+    <None Include="bin\Release\net5.0\Microsoft.OpenApi.dll" />
+    <None Include="bin\Release\net5.0\Newtonsoft.Json.dll" />
+    <None Include="bin\Release\net5.0\pl\System.Private.ServiceModel.resources.dll" />
+    <None Include="bin\Release\net5.0\pt-BR\System.Private.ServiceModel.resources.dll" />
+    <None Include="bin\Release\net5.0\RecipeFoodApiProject.dll" />
+    <None Include="bin\Release\net5.0\RecipeFoodApiProject.exe" />
+    <None Include="bin\Release\net5.0\RecipeFoodApiProject.pdb" />
+    <None Include="bin\Release\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll" />
+    <None Include="bin\Release\net5.0\runtimes\win-arm64\native\sni.dll" />
+    <None Include="bin\Release\net5.0\runtimes\win-x64\native\sni.dll" />
+    <None Include="bin\Release\net5.0\runtimes\win-x86\native\sni.dll" />
+    <None Include="bin\Release\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll" />
+    <None Include="bin\Release\net5.0\ru\System.Private.ServiceModel.resources.dll" />
+    <None Include="bin\Release\net5.0\Serilog.dll" />
+    <None Include="bin\Release\net5.0\Serilog.Extensions.Logging.dll" />
+    <None Include="bin\Release\net5.0\Serilog.Extensions.Logging.File.dll" />
+    <None Include="bin\Release\net5.0\Serilog.Formatting.Compact.dll" />
+    <None Include="bin\Release\net5.0\Serilog.Sinks.Async.dll" />
+    <None Include="bin\Release\net5.0\Serilog.Sinks.File.dll" />
+    <None Include="bin\Release\net5.0\Serilog.Sinks.RollingFile.dll" />
+    <None Include="bin\Release\net5.0\Swashbuckle.AspNetCore.Swagger.dll" />
+    <None Include="bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll" />
+    <None Include="bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll" />
+    <None Include="bin\Release\net5.0\System.Data.SqlClient.dll" />
+    <None Include="bin\Release\net5.0\System.Diagnostics.DiagnosticSource.dll" />
+    <None Include="bin\Release\net5.0\System.IdentityModel.Tokens.Jwt.dll" />
+    <None Include="bin\Release\net5.0\System.Net.WebSockets.WebSocketProtocol.dll" />
+    <None Include="bin\Release\net5.0\System.Private.ServiceModel.dll" />
+    <None Include="bin\Release\net5.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <None Include="bin\Release\net5.0\System.ServiceModel.dll" />
+    <None Include="bin\Release\net5.0\System.ServiceModel.Http.dll" />
+    <None Include="bin\Release\net5.0\System.ServiceModel.Primitives.dll" />
+    <None Include="bin\Release\net5.0\System.ServiceModel.Security.dll" />
+    <None Include="bin\Release\net5.0\tr\System.Private.ServiceModel.resources.dll" />
+    <None Include="bin\Release\net5.0\zh-Hans\System.Private.ServiceModel.resources.dll" />
+    <None Include="bin\Release\net5.0\zh-Hant\System.Private.ServiceModel.resources.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Apis.Auth.AspNetCore3" Version="1.46.0" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.17" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+    <PackageReference Include="Serilog.Extensions.Logging.File" Version="3.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.10.0" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Image\" />
+  </ItemGroup>
+
+</Project>

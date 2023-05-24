@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\trann\source\repos\RecipeFoodApiPublish</_PublishTargetUrl>
+    <History>True|2023-05-23T18:01:52.4049525Z;True|2023-05-24T00:23:38.2198196+07:00;False|2023-05-24T00:23:32.2406879+07:00;True|2023-05-23T23:42:34.0776477+07:00;False|2023-05-23T23:42:29.8019161+07:00;True|2023-05-23T23:18:45.3895386+07:00;False|2023-05-23T23:18:33.4747585+07:00;True|2023-05-23T00:17:28.0374328+07:00;False|2023-05-23T00:17:17.8142134+07:00;True|2023-05-22T23:00:58.0621970+07:00;False|2023-05-22T23:00:49.3973467+07:00;True|2023-05-22T20:26:52.7741177+07:00;True|2023-05-19T00:15:07.0801862+07:00;False|2023-05-19T00:15:00.0855843+07:00;True|2023-05-19T00:04:49.3828357+07:00;True|2023-05-19T00:04:40.1369245+07:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>
