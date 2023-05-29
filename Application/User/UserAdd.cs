@@ -15,12 +15,12 @@ namespace Application.User
 {
     public class UserAdd
     {
-        public class Command : IRequest<Result<string>>
+        public class Command : IRequest<Result<Table_User>>
         {
             public Table_User infor { get; set; }
         }
 
-        public class Handler : IRequestHandler<Command, Result<string>>
+        public class Handler : IRequestHandler<Command, Result<Table_User>>
         {
       
             private readonly IConfiguration _configuration;
@@ -30,7 +30,7 @@ namespace Application.User
 
                 _configuration = configuration;
             }
-            public async Task<Result<string>> Handle(Command request, CancellationToken cancellationToken)
+            public async Task<Result<Table_User>> Handle(Command request, CancellationToken cancellationToken)
             {
                 try
                 {
@@ -42,13 +42,13 @@ namespace Application.User
                     using (var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))
                     {
                         connection.Open();
-                        var result = await connection.QueryFirstAsync<string>(spName, parameters, commandType: System.Data.CommandType.StoredProcedure);
-                        return Result<string>.Success(result);
+                        var result = await connection.QueryFirstAsync<Table_User>(spName, parameters, commandType: System.Data.CommandType.StoredProcedure);
+                        return Result<Table_User>.Success(result);
                     }
                 }
                 catch(Exception e)
                 {
-                    return Result<string>.Failure(e.Message);
+                    return Result<Table_User>.Failure(e.Message);
                 }
             }
         }

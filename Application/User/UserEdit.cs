@@ -40,6 +40,7 @@ namespace Application.User
                     string spName = "[USP_UpdateProfileUser]";
                     DynamicParameters parameters = new DynamicParameters();
                     parameters.Add("@ScreenName", request.infor.ScreenName);
+                    parameters.Add("@Image", request.infor.Image);
                     parameters.Add("@Bio", request.infor.Bio);
                     parameters.Add("@Location", request.infor.Location);
                     parameters.Add("@Facebook", request.infor.FacebookURL);

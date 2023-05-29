@@ -57,6 +57,7 @@ namespace Application.CongThuc
                         parameters.Add("@ThoiGianNau", request.data.ThongTinChung.ThoiGianNau);
                         parameters.Add("@ThoiGianChuanBi", request.data.ThongTinChung.ThoiGianChuanBi);
                         parameters.Add("@IDCongThuc", request.data.ThongTinChung.ID);
+                        parameters.Add("@AnhKemTheo", request.data.ThongTinChung.AnhKemTheo);
 
                         var InsertResult = await connection.QueryFirstOrDefaultAsync<Table_CongThuc>(spNameCongThuc, parameters, transaction, commandType: System.Data.CommandType.StoredProcedure);
 

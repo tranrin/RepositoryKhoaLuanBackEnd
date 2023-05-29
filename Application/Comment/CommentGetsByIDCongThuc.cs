@@ -41,7 +41,7 @@ namespace Application.Comment
                     DynamicParameters parameters = new DynamicParameters();
 
                     parameters.Add("@CongThucID", request.CongThucID);
-                    string spName = "USP_GetsCommentByCongThucId";
+                    string spName = "[USP_Comment_GetByCongThucID]";
                     using (var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))
                     {
                         connection.Open();

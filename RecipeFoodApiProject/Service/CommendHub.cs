@@ -57,7 +57,7 @@ namespace RecipeFoodApiProject.Hubs
         }
 
 
-        public async Task SendOffersToUser(CommentRequest data, CancellationToken ct)
+        public async Task SendOffersToUser([FromBody]CommentRequest data)
         {
             //CommentResponse
             try
@@ -69,7 +69,7 @@ namespace RecipeFoodApiProject.Hubs
 
                 //    //Context.User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
                 ////data.UserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                //var listResult = await Mediator.Send(new LuotThichGets.Query { userID = idUser }, ct);
+             //   var listResult = await Mediator.Send(new LuotThichGets.Query { userID = idUser }, ct);
                 var dataReturn = await _mediator.Send(new CommentAdd.Query
                 {
 
@@ -77,8 +77,8 @@ namespace RecipeFoodApiProject.Hubs
                     {
                         Content = data.Content,
                         UserId = idUser,
-                        CongThucId = 3,
-                        ParentId = null,
+                        CongThucId = data.CongThucId,
+                        ParentId = data.ParentId,
                     }
                 });
                 await Clients.All.SendAsync("ReceiveMessage", dataReturn);

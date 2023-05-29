@@ -17,6 +17,7 @@ using Microsoft.AspNetCore.Cors;
 using RecipeFoodApiProject.Controllers;
 using System.Reflection.Metadata.Ecma335;
 using System.Collections.Generic;
+using System.Drawing;
 
 namespace RecipeFoodApiProject.CongThucController
 {
@@ -69,7 +70,7 @@ namespace RecipeFoodApiProject.CongThucController
        [Authorize]
         public async Task<IActionResult> CongThucAdd(CancellationToken ct, [FromBody] CongThucRequest data)
         {
-           
+
             //if (data.File != null)
             //{
             //    PostFile(new FileUploadRequest { File = data.File });
@@ -77,7 +78,7 @@ namespace RecipeFoodApiProject.CongThucController
             //    //data.ThongTinChung.AnhKemTheo = data.File.FileName;
             //}
 
-           
+            data.ThongTinChung.AnhKemTheo = "images/" + data.ThongTinChung.AnhKemTheo.Replace("C:\\fakepath\\","");
             data.ThongTinChung.IDUser = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             var listResult = await Mediator.Send(new CongThucAdd.Query { data = data }, ct);
             //return HandlerResult(listResult);
@@ -103,6 +104,9 @@ namespace RecipeFoodApiProject.CongThucController
             //    data.ThongTinChung.AnhKemTheo = "images" + data.File.FileName;
             //    //data.ThongTinChung.AnhKemTheo = data.File.FileName;
             //}
+            data.ThongTinChung.AnhKemTheo = data.ThongTinChung.AnhKemTheo.Replace("images/", "");
+            data.ThongTinChung.AnhKemTheo = "images/" + data.ThongTinChung.AnhKemTheo.Replace("C:\\fakepath\\", "");
+
             data.ThongTinChung.IDUser = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             var listResult = await Mediator.Send(new CongThucEdit.Command { data = data }, ct);
             //return HandlerResult(listResult);
@@ -113,8 +117,8 @@ namespace RecipeFoodApiProject.CongThucController
         public async Task<IActionResult> CongThucGet( int data,CancellationToken ct)
         {
             try
-            {
-                var listResult = await Mediator.Send(new CongThucGet.Query { CongThucID = data }, ct);
+            { var IDUser = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                var listResult = await Mediator.Send(new CongThucGet.Query { CongThucID = data , IDUser =IDUser}, ct);
                 //return HandlerResult(listResult);
                 return HandlerResult(listResult);
             }
@@ -179,7 +183,8 @@ namespace RecipeFoodApiProject.CongThucController
             try
             {   //var checkFile = model.File
                   //  byte[] bytes = System.IO.File.ReadAllBytes(model.File);
-                var saveFilePath = Path.Combine("wwwroot\\images", model.File.FileName);
+                var saveFilePath = Path.Combine("wwwroot\\images", model.File.FileName.Replace("images/",""));
+                
                 //var saveFilePath = _webHostEnvironment.WebRootPath + "\\FileUpload\\";
                 if (!Directory.Exists("wwwroot\\images"))
                 {
@@ -194,12 +199,12 @@ namespace RecipeFoodApiProject.CongThucController
                      model.File.CopyTo(fileStream);
                       fileStream.Flush();
                     //  return Ok(saveFilePath);
-                    return "images/" + model.File.FileName;
+                    return "images/" + model.File.FileName.Replace("images/", "");
                 }
                
             }
             catch(
-
+            
             Exception e
             )
             {

@@ -14,5 +14,9 @@ namespace Domain
         public string Bio { get; set; }
         public string Location { get; set; }
         public string Image { get; set; }
+        public string FacebookURL { get; set; }
+        public string InstagramURL { get; set; }
+        public string WebsiteURL { get; set; }
+        public string TwitterURL { get; set; }
     }
 }

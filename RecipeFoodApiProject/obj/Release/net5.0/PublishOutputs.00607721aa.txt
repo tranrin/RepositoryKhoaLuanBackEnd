@@ -1,9 +1,29 @@
 C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\RecipeFoodApiProject.exe
+C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\wwwroot\images\10x-featured-social-media-image-size.png
 C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\wwwroot\images\1556323.jpg
+C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\wwwroot\images\3..png
+C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\wwwroot\images\320929120_664884502094282_4563048935069373784_n.jpg
+C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\wwwroot\images\342045604_950559599434771_6890333168329933432_n.jpg
+C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\wwwroot\images\3607328c7182981c4b926e7d5a17a0e2.webp
+C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\wwwroot\images\638025697712815829_iPhone 14 Promax (7).webp
 C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\wwwroot\images\8q-gsMJg.png
 C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\wwwroot\images\check1.jpg
 C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\wwwroot\images\download (1).png
+C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\wwwroot\images\download.jfif
+C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\wwwroot\images\download.jpg
+C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\wwwroot\images\download.png
+C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\wwwroot\images\downloadk.jpg
+C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\wwwroot\images\images.jpg
+C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\wwwroot\images\images.png
+C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\wwwroot\images\iphone-13-pro-max-xanh-la.webp
+C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\wwwroot\images\logo-mobile.png
+C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\wwwroot\images\pexels-adrien-olichon-2387819.jpg
+C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\wwwroot\images\pexels-andrea-piacquadio-837358.jpg
+C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\wwwroot\images\Saodieu.jpg
+C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\wwwroot\images\Screenshot 2023-03-14 100156.png
+C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\wwwroot\images\ss236.jpg
 C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\wwwroot\images\starry_sky_stars_pleiades_177607_3840x2160.jpg
+C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\wwwroot\images\Untitled.png
 C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\appsettings.Development.json
 C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\appsettings.json
 C:\Users\trann\source\repos\RecipeFoodApiProject\RecipeFoodApiProject\obj\Release\net5.0\PubTmp\Out\RecipeFoodApiProject.dll

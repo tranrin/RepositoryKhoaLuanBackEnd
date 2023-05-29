@@ -21,6 +21,9 @@ using Microsoft.AspNetCore.Cors;
 using Application.Core;
 using Microsoft.AspNetCore.Identity;
 using System.IO;
+using Google.Apis.Auth.OAuth2.Responses;
+using Domain.Response;
+using Newtonsoft.Json.Linq;
 
 namespace RecipeFoodApiProject.Controllers
 {
@@ -38,12 +41,10 @@ namespace RecipeFoodApiProject.Controllers
         [Authorize]
         public async Task<IActionResult> EditProfile(CancellationToken ct, [FromBody] UserEditRequest data)
         {
-            if (data.TepDinhKem != null)
-            {
-                PostFile(new FileUploadRequest { File = data.TepDinhKem });
-                data.Image = "images" + data.TepDinhKem.FileName;
-              
-            }
+
+            // PostFile(new FileUploadRequest { File = data.TepDinhKem });
+            data.Image = data.Image.Replace("C:\\fakepath\\", "");
+            //data.Image = data.Image.Replace("C:\\fakepath\\", "");
             data.Email = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             var listResult = await Mediator.Send(new UserEdit.Command { infor = data }, ct);
             //return HandlerResult(listResult);
@@ -79,7 +80,10 @@ namespace RecipeFoodApiProject.Controllers
                 //return HandlerResult(Result<string>.Success(GenerateToken(email)));
                 if (listResult.IsSuccess)
                 {
-                    return Ok(GenerateToken(email));
+
+                    return HandlerResult(Result<TokenResponseLogin>.Success(new TokenResponseLogin { Token = GenerateToken(email), ImageUser = listResult.Value.Image })) ;
+                  //  return Ok( new TokenResponseLogin { Token = GenerateToken(email), ImageUser = listResult.Value.Image });
+
                 }
                 else
                 {

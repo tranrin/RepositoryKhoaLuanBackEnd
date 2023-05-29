@@ -8,8 +8,9 @@ namespace Domain.Response
 {
     public class CongThucGetResponse
     {
-        public Table_CongThuc ThongTinChung { get; set; }
+        public CongThucDetailResponse ThongTinChung { get; set; }
         public List<Table_NguyenLieu> NguyenLieu { get; set; }
         public List<Table_BuocNau> BuocNau { get; set; }
+        public Table_DanhGia DanhGiaByUserId { get; set; }
     }
 }

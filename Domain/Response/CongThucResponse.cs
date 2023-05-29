@@ -16,6 +16,7 @@ namespace Domain.Response
         public int SaoTrungBinh { get; set; }
         public int TongSoLuong { get; set; }
         
+        
 
 
     }

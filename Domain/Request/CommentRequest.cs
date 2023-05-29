@@ -9,7 +9,7 @@ namespace Domain.Request
     public class CommentRequest
     {
         public int? ParentId { get; set; }
-        public int? CongThucId { get; set; }
+        public int CongThucId { get; set; }
         public string Content { get; set; }
         public string UserId { get; set; }
     }

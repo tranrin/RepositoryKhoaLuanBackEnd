@@ -10,7 +10,8 @@ namespace Domain
     {
         public int ID { get; set; }
         public int Sao { get; set; }
+        public string IDUser { get; set; }
+        public int IDCongThuc { get; set; }
         public string UserID { get; set; }
-        public int CongThucID { get; set; }
     }
 }

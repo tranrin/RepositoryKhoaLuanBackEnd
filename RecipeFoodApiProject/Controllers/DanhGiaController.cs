@@ -27,15 +27,15 @@ namespace RecipeFoodApiProject.Controllers
             //return HandlerResult(listResult);
             return HandlerResult(listResult);
         }
-        [HttpPost("DanhGiaEdit")]
-        [AllowAnonymous]
-        public async Task<IActionResult> DanhGiaEdit(CancellationToken ct, [FromBody] DanhGiaRequestEdit data)
-        {   
+        //[HttpPost("DanhGiaEdit")]
+        //[AllowAnonymous]
+        //public async Task<IActionResult> DanhGiaEdit(CancellationToken ct, [FromBody] DanhGiaRequestEdit data)
+        //{   
 
-            var listResult = await Mediator.Send(new DanhGiaUpdate.Command { Request = data }, ct);
-            //return HandlerResult(listResult);
-            return HandlerResult(listResult);
-        }
+        //    var listResult = await Mediator.Send(new DanhGiaUpdate.Command { Request = data }, ct);
+        //    //return HandlerResult(listResult);
+        //    return HandlerResult(listResult);
+        //}
         
         [HttpPost("DanhGiaByCongThucID/{CongThucID}")]
         [Authorize]
